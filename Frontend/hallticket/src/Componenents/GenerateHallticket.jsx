@@ -96,7 +96,7 @@ const GenerateHallticket = () => {
           padding: "8px",
         }}
       >
-        <img
+       {hallticketData?.student?.photo && ( <img
           src={`https://hallticket-f0z0.onrender.com/${hallticketData.student.photo}`}
           alt="Student"
           crossOrigin="anonymous"
@@ -108,6 +108,7 @@ const GenerateHallticket = () => {
             border: "1px solid #ccc",
           }}
         />
+      )}
       </td>
     </tr>
     {/* Repeat similar <td> styles for other rows */}
