@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: hallticket-backend
+    env: node
+    rootDir: Backend
+    buildCommand: npm install
+    startCommand: node server.js  # or "npm start" if you use a start script
+    envVars:
+      - key: PORT
+        value: 5000  # Or your desired port
+      - key: MONGO_URI
+        sync: false  # You’ll add this in the Render dashboard
+      - key: JWT_SECRET
+        sync: false  # Add this manually in Render
