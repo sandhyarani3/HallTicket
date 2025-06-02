@@ -37,7 +37,7 @@ const GenerateHallticket = () => {
         link.href = canvas.toDataURL();
         link.click();
       });
-    }, 500); // Wait 500ms to ensure image loads
+    }, 1000); // Wait 500ms to ensure image loads
   };
   
 
