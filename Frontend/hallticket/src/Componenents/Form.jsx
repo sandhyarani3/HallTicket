@@ -29,7 +29,7 @@ const Form = () => {
     formData.append("photo", photo);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/hallticket/create", formData, {
+      const res = await axios.post("https://hallticket-f0z0.onrender.com/api/hallticket/create", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
