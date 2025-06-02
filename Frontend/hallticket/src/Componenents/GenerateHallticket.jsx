@@ -14,7 +14,7 @@ const GenerateHallticket = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/generate-hallticket/generate",
+        "https://hallticket-f0z0.onrender.com/api/generate-hallticket/generate",
         { studentId, location, time }
       );
 
@@ -97,7 +97,7 @@ const GenerateHallticket = () => {
         }}
       >
         <img
-          src={`http://localhost:5000/${hallticketData.student.photo}`}
+          src={`https://hallticket-f0z0.onrender.com/${hallticketData.student.photo}`}
           alt="Student"
           crossOrigin="anonymous"
           style={{
