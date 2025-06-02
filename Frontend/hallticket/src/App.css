@@ -1,0 +1,222 @@
+/* Form.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.container {
+  width: 100vw;             /* full viewport width */
+  min-height: 100vh;        /* full viewport height */
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #acbbde , #E4EfE9); /* your gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+
+
+.navbar {
+  width:100vw;
+  /* margin: 50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #acbbde;
+  color: black;
+  padding: 1rem 2rem;
+}
+
+.left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right {
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 160px;
+}
+
+.dropdown-content button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-content button:hover {
+  background: linear-gradient(135deg, #5f0ee3, #1a61e2);
+  transform: scale(1.02);
+}
+
+
+.show {
+  display: block;
+}
+
+/* Form Styling */
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  background-color:white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0b73d9;
+}
+
+
+.hallticket {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hallticket h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.hallticket-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hallticket-photo {
+  width: 120px;
+  height: 140px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.hallticket-details p,
+.hallticket-exam p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.hallticket-exam {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.hallticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hallticket-form input,
+.hallticket-form select,
+.hallticket-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.hallticket-form button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hallticket-form button:hover {
+  background-color: #45a049;
+}
